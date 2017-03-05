@@ -54,7 +54,7 @@ RUN echo "mysql-server mysql-server/root_password password" | debconf-set-select
 RUN echo "mysql-server mysql-server/root_password_again password" | debconf-set-selections
 
 # Update Ubuntu Software repository before installation of the stack
-RUN apt-get update >/dev/null
+RUN apt-get update
 
 ################
 # Installtions #
