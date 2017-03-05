@@ -120,7 +120,9 @@ RUN chown -R www-data:www-data ${php_sock}
 # Allow connections to be made to the database from outside of the container
 RUN sed -i 's/127.0.0.1/'0.0.0.0'/g' ${mysql_conf}
 
-VOLUME /var/lib/mysql
+### Supervisor ###
+RUN chown root:root ${supervisor_conf}
+RUN chmod 600 ${supervisor_conf}
 
 ##########################################################
 # Expose required port and execute initialisation script #
