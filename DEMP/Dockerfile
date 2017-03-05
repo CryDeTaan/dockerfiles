@@ -39,7 +39,7 @@ ENV APP_DB testapp
 ENV APP_USER testuser
 ENV APP_PASS testpass
 ENV MYSQL_ALLOWED_IP 172.17.%.%
-ENV MYSQL_PASS JustWhatYouWant
+ENV MYSQL_ROOT_PASS JustWhatYouWant
 
 ### Supervisord ####
 ENV supervisor_conf /etc/supervisor/supervisord.conf
