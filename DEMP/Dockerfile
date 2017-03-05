@@ -66,9 +66,7 @@ RUN apt-get install -y \
         nginx \
         php-fpm \
         php-mysql \
-        mysql-server \
-        vim \
-        >/dev/null
+        mysql-server
 
 #########################
 # Post install cleanups #
